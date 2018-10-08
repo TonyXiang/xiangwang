@@ -1,0 +1,53 @@
+{
+  "name": "xiangwang",
+  "version": "1.0.0",
+  "description": "xiang wang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "build": "webpack --config build/webpack.prod.conf.js",
+    "lint": "eslint --ext .js,.vue .",
+    "fix": "eslint --ext .js,.vue --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyXiang/xiangwang.git"
+  },
+  "author": "xianglei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyXiang/xiangwang/issues"
+  },
+  "homepage": "https://github.com/TonyXiang/xiangwang#readme",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.6.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^4.0.6",
+    "express": "^4.16.3",
+    "html-webpack-plugin": "^3.2.0",
+    "url-loader": "^1.1.1",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-hot-middleware": "^2.24.2"
+  }
+}
