@@ -1,5 +1,5 @@
 <template>
-    <h1 @click="showHello">心之所向，素履以往12</h1>
+    <h1 class="home-title" @click="showHello">心之所向，素履以往12</h1>
 </template>
 
 <script>
@@ -18,6 +18,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+  @import "../../style/common.scss";
+  .home-title{
+    color: #333;
+  }
 </style>

@@ -2,7 +2,6 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -29,8 +28,18 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: "pre",
+        test: /\.(js|vue)$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          emitWarning: true,
+          formatter: require('eslint-friendly-formatter') // 指定错误报告的格式规范
+        }
+      },
+      {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -44,13 +53,18 @@ module.exports = {
         use: {
           loader: 'vue-loader'
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['../dist'], {
-      allowExternal: true
-    }),
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, '../src/index.html')
