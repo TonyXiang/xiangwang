@@ -22,6 +22,7 @@ module.exports = {
   devServer: {
     contentBase: '../dist',
     port: '9000',
+    host: 'test.xiangleiboy.com',
     hot: true
   },
   devtool: 'eval-source-map',
