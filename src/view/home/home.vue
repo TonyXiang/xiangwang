@@ -1,5 +1,8 @@
 <template>
-    <h1 class="home-title" @click="showHello">心之所向，素履以往12</h1>
+    <div>
+        <h1 class="home-title" @click="showHello">心之所向，素履以往12</h1>
+        <img src="http://xiangleiboy.oss-cn-hangzhou.aliyuncs.com/xiangwang/IMG_20180728_124420.jpg"/>
+    </div>
 </template>
 
 <script>
