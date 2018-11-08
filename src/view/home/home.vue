@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="home-title" @click="showHello">心之所向，素履以往12</h1>
+        <h1 class="home-title" @click="showHello">心之所向，素履以往kobe</h1>
         <!--<img src="http://xiangleiboy.oss-cn-hangzhou.aliyuncs.com/xiangwang/IMG_20180728_124420.jpg?x-oss-process=image/resize,w_500,limit_0"/>-->
         <row>
             <col span="12">
