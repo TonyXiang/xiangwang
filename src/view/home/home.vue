@@ -43,7 +43,8 @@
     name: 'home',
     data() {
       return {
-        theme1: 'light'
+        theme1: 'light',
+        add: 'dev'
       }
     },
     methods: {
