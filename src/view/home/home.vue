@@ -50,6 +50,9 @@
     methods: {
       showHello() {
         this.$router.push('/hello')
+      },
+      confirm() {
+        console.log('confirm')
       }
     }
   }
